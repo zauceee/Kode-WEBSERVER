@@ -1,7 +1,7 @@
 # Kode-WEBSERVER -- v1.1 -- 2024-01-09
 
 Webserver completely written in Rust, and it also my first project ever made with Rust ;)
-
+(thus why the code is really messy, dont judge me 🥲)
 It can:
 
 ## Fetch html files to stream of a directory
