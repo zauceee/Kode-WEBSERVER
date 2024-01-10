@@ -4,17 +4,17 @@ Webserver completely written in Rust, and it also my first project ever made wit
 
 It can:
 
-# Fetch html files to stream of a directory
+## Fetch html files to stream of a directory
 The server fetches files from the "views" folder present in the same dir as the server's executable, it will fetch all the html files and use them to display to the website.
 It can also fetch a 404.html file to display for the ERROR 404.
 
-TOADD(possibly in the future):
+## TOADD/TODO(possibly in the future):
 
-# Handle POST and GET requests differently;
+### Handle POST and GET requests differently;
 
-# Handle data references on html
+### Handle data references on html;
 for ex: {{ hello }} on the html file would turn onto a variable content with the name {{ hello }}.
 
-# Handle SQL databases and also sessions.
+### Handle SQL databases and also sessions.
 
-All of this would be handled with a "custom scripting language" (which seems something large but possible, if I can lol)
+All of this would be handled with a "custom scripting language" (which seems something large but possible, if I can lol).
