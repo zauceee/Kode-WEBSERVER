@@ -16,9 +16,7 @@ mod utils;
 /*
 SIMPLE RUST WEB SERVER BY KODE!! -2024 yurrr
 
-Made with the help of Rust One-Threaded simple web server example, also some stockoverflow
-messages but mostly documentation research and, used ChatGPT to explain me a few errors
-and how to fix them, also optimize, ALTHOUGH THE CODE IS NOT FULLY OPTIMIZED!
+Made with the help of Rust One-Threaded simple web server example, used different couple of sources, THE CODE IS NOT FULLY OPTIMIZED!
 */
 fn main() {
     let mut file_names:  Vec<String>;
@@ -140,8 +138,8 @@ fn handle_connection(mut stream: TcpStream, files_data: &HashMap<String, String>
     let request = String::from_utf8_lossy(&buffer[..]);
 
     let request_line = request.lines().next().unwrap_or(""); /* --> Well I improved this, 
-                                                            I just removed a bootleg line of code an it works
-                                                            so basically, dont fucking does this
+                                                            I just removed a bootleg line of code and it works
+                                                            so basically, dont rlly know what happened but
                                                             it works somehow lol.
                                                              */
     let req_type = request_line
