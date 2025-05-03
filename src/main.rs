@@ -64,7 +64,7 @@ fn main() {
     }
     let mut files_data = HashMap::new();
     
-    let content404: String = String::from("404, non existent endpoint.");
+    let mut content404: String = String::from("404, non existent endpoint.");
     //let content404: String = String::from("404, non existent page.");
    match utils::get_files_in_dir("views") {
     Ok(file_names) => {
@@ -79,7 +79,7 @@ fn main() {
                 files_data.insert(String::from(""), file_content.clone());
             } else if file_name == "404.html" {
                 files_data.insert(String::from("404"), file_content.clone());
-                let content404 = file_content.clone();
+                content404 = file_content.clone();
             } else {
                 files_data.insert(utils::remove_suffix(&file_name, ".html").to_string(), file_content.clone());
             }
